@@ -1,0 +1,270 @@
+/* Сброс стилей браузера */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* index.php  (главная страница) */
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    height: 100vh;
+    background: blanchedalmond;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-shrink: 0;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    background: chocolate;
+}
+
+nav {
+    display: flex;
+    height: 50%;
+    background: cornflowerblue;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+.button-nav {
+    display: flex;
+    border: 2px solid #000;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    background: aqua;
+    text-decoration: none;
+}
+
+.button-news {
+    width: 80%;
+}
+
+.hoverNav:hover {
+    background: #45b9b9;
+    color: #f8fdff;
+    border: 2px solid #f8fdff;
+}
+
+.button-nav:active {
+    background: #f8fdff;
+    color: #45b9b9;
+    border: 2px solid #45b9b9;
+    transition: background-color 0.1s;
+}
+
+.active {
+    background: #f8fdff;
+    color: #45b9b9;
+    border: 2px solid #45b9b9;
+    transition: background-color 0.1s;
+    cursor: default !important;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    flex-grow: 1;
+    background: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainArticle {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    flex-grow: 1;
+    background: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+}
+.mainIndex{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    flex-grow: 1;
+    background: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainNews {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    flex-grow: 1;
+    background: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainNewsAdmin {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    flex-grow: 1;
+    background: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+}
+
+.sideBarCategories {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    align-items: center;
+    text-decoration: none;
+    background: burlywood;
+    height: 84.8vh;
+    border: 0.1vh solid #000000;
+}
+
+.sideBarCategories a {
+    text-decoration: none;
+    margin-top: 1vh;
+    font-weight: bold;
+}
+
+.sideBarNews  {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    align-items: center;
+    text-decoration: none;
+    background: burlywood;
+    height: 84.8vh;
+    border: 0.1vh solid #000000;
+}
+.sideBarNews a {
+    text-decoration: none;
+    margin-top: 1vh;
+    font-weight: bold;
+}
+
+.newsContent {
+    display: flex;
+    width: 90vw;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    width: 90vw;
+    max-height: 85vh;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.mainContent form {
+    height: 85vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+footer {
+    display: flex;
+    flex-shrink: 0;
+    height: 5vh;
+    background: cornflowerblue;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.mainPageAdmin {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    flex-grow: 1;
+    background: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+}
+
+.formCreationNews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:75vw;
+    height: 85vh;
+    background: cadetblue;
+    overflow: hidden; /* Основное правило - скрываем всё, что выходит за границы */
+    box-sizing: border-box; /* Учитываем padding и border в общей высоте */
+    padding: 20px; /* Если нужны отступы внутри */
+}
+
+.headlineNews {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vw;
+    background: aquamarine;
+    width: 58vw;
+    border-radius: 10px;
+}
+
+.headlineNews textarea {
+    max-height: 10vh;
+    min-height: 10vh;
+    resize: vertical;
+    overflow: auto;
+}
+
+.headlineNews textarea:focus {
+    background: antiquewhite;
+}
+
+.mainPartNews {
+    display: flex;
+    margin-top: 1vw;
+    flex-direction: column;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 2vh;
+    background: aquamarine;
+    width: 58vw;
+    border-radius: 10px;
+}
+
+.mainPartNews textarea {
+    max-height: 50vh;
+    min-height: 50vh;
+    resize: vertical;
+    overflow: auto;
+}
+
+.mainPartNews textarea:focus {
+    background: antiquewhite;
+}
+
+.sendNews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    width: 58vw;
+    background: aquamarine;
+    padding: 2vh 2vh 2vh 2vh ;
+    border-radius: 10px;
+}
+
+.sendNews input {
+    width: 58vw;
+}
