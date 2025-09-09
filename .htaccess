@@ -1,0 +1,19 @@
+# Отключение просмотра содержимого папок
+Options -Indexes
+
+# Включение перезаписи URL
+RewriteEngine On
+
+# Установка главной страницы
+DirectoryIndex index.php
+
+# Настройка кодировки UTF-8
+AddDefaultCharset UTF-8
+
+# Перенаправление всех запросов на index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+# Обработка ошибки 404
+ErrorDocument 404 /404.php

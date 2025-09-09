@@ -66,11 +66,11 @@ class CreateNewsPush extends AdminModel
      * Если false, генерируем страниццу и указываем ошибку.
      */
     public function predicateMethodPost(bool $validateMethodPost):void
-    {
-        if ($validateMethodPost !== true){
+    {    }
+if ($validateMethodPost !== true){
 
-        }else{
+}else{
 
-        }
-    }
+}
+
 }
