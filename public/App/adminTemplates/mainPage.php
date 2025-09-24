@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/App/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Курс №2 Урок №2</title>
 </head>
 <body>
