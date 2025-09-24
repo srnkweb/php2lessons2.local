@@ -1,6 +1,6 @@
 <header>
     <nav>
-<a href="<?= ($current_page == 'index.php') ? '#' : '/index.php' ?>"
+<a href="<?= ($current_page == 'index.php') ? '#' : 'http://php2lessons2.local/' ?>"
    class=" button-nav <?= ($current_page == 'index.php') ? 'active': 'hoverNav';?>" >Домашнее задание
 </a>
 <a href="<?= ($current_page == 'news.php') ? '#' : 'App/controllers/news.php' ?>"

@@ -1,0 +1,8 @@
+# Запрещаем ЛЮБОЙ доступ к папке App и всем её подпапкам
+Order Deny,Allow
+Deny from all
+
+# Разрешаем доступ только для локальных включений (include/require)
+<IfModule mod_rewrite.c>
+    RewriteEngine Off
+</IfModule>
