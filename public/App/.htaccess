@@ -4,5 +4,5 @@ Deny from all
 
 # Разрешаем доступ только для локальных включений (include/require)
 <IfModule mod_rewrite.c>
-    RewriteEngine Off
+   RewriteEngine Off
 </IfModule>

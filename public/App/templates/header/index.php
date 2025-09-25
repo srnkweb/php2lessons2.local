@@ -3,7 +3,7 @@
 <a href="<?= ($current_page == 'index.php') ? '#' : 'http://php2lessons2.local/' ?>"
    class=" button-nav <?= ($current_page == 'index.php') ? 'active': 'hoverNav';?>" >Домашнее задание
 </a>
-<a href="<?= ($current_page == 'news.php') ? '#' : 'App/controllers/news.php' ?>"
+<a href="<?= ($current_page == 'news.php') ? '#' : 'http://php2lessons2.local/news' ?>"
    class=" button-nav <?= ($current_page == 'news.php') ? 'active': 'hoverNav'; ?>">
     Посмотреть все новости</a>
     </nav>

@@ -3,7 +3,7 @@ Options -Indexes
 
 # Включение перезаписи URL
 RewriteEngine On
-
+RewriteBase /
 # Установка главной страницы
 DirectoryIndex index.php
 
