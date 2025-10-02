@@ -2,7 +2,7 @@
 
 require __DIR__ . '/../../autoload.php';
 
-use App\View\index;
+use App\View\Index;
 
 $view = new Index();
 $current_page = 'index.php';

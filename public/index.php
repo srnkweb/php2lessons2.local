@@ -35,7 +35,7 @@ $allowed_controllers = ['article', 'news', 'index', ''];
 
 // Проверка контроллера
 if (!in_array($controller, $allowed_controllers)) {
-    show404();
+    require __DIR__ . '/App/controllers/error404.php';
 }
 
 // Валидация ID
@@ -64,6 +64,6 @@ switch ($controller) {
         require __DIR__ . '/App/controllers/index.php';
         break;
     default:
-        show404();
+        require __DIR__ . '/App/controllers/error404.php';
         break;
 }

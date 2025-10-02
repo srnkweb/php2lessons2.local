@@ -26,4 +26,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^$ index.php?controller=index [L,QSA]
 
 # Обработка ошибки 404
-ErrorDocument 404 /404.php
+#ErrorDocument 404 /404.php
