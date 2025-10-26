@@ -2,8 +2,8 @@
 
 namespace App\View;
 
-class Error404
+class Error404 extends MainView
 {
-    public string $header = 'error404.php';
-    public string $content = 'error404.php';
+    public string $header = '/header/error404.php';
+    public string $content = '/main/error404.php';
 }

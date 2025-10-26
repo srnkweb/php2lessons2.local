@@ -3,5 +3,5 @@
 use App\View\Error404;
 
 $error404 = new Error404();
-
-$current_page = 'error404.php';
+$current_page = '/error404.php';
+$error404 ->display($current_page);
