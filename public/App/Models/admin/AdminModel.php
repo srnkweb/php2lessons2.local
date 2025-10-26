@@ -1,6 +1,8 @@
 <?php
 
-namespace App;
+namespace App\Models\admin;
+
+use App\Model;
 
 class AdminModel extends Model
 {
