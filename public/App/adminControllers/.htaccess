@@ -1,9 +1,0 @@
-# Запрещаем любой прямой доступ к админ-контроллерам
-Order Deny,Allow
-Deny from all
-
-# Но разрешаем доступ из PHP (include/require)
-<FilesMatch "\.php$">
-  Order Allow,Deny
-   Deny from all
-</FilesMatch>
